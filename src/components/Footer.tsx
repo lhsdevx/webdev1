@@ -5,8 +5,9 @@ const Footer = () => {
 
         <footer className="bg-primary py-10 md:py-14">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
-          <div className="relative max-w-48 h-7 mx-auto">
-            <Image src="/logo-white.png" alt="Wordware logo white" layout="fill" />
+          <div className="relative w-[125px] h-[44px] mx-auto">
+          <Image src="/devxlogoblue.png" alt="my logo" layout="fill"
+      />
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center text-gray-200 font-medium gap-8 mt-12 lg:mt-8">
             <a target="_blank" href="https://discord.gg/hQkDk87vjJ">Join Discord</a>
