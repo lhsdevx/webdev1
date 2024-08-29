@@ -17,37 +17,44 @@ const teamMembers = [
     name: 'Jane Doe',
     photo: 'person.png',
     description: 'a person',
+    position: 'hello world'
   },
   {
     name: 'Doe Jane',
     photo: 'person.png',
     description: 'another person',
+    position: 'hello world'
   },
   {
     name: 'Doe Doe',
     photo: 'person.png',
     description: 'another person',
+    position: 'hello world'
   },
   // Add more members as needed
   {
     name: 'Doe Doe',
     photo: 'person.png',
     description: 'another person',
+    position: 'hello world'
   },
   {
     name: 'Doe Doe',
     photo: 'person.png',
     description: 'another person',
+    position: 'hello world'
   },
   {
     name: 'Doe Doe',
     photo: 'person.png',
     description: 'another person',
+    position: 'hello world'
   },
   {
     name: 'Doe Doe',
     photo: 'person.png',
     description: 'another person',
+    position: 'hello world'
   },
 ];
 
@@ -68,27 +75,27 @@ export default function Home() {
           className="-mb-4 md:-mb-6 group"
           title="Explore our product"
         >
-          {/* Optional: Replace with your logo or badge */}
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 122 37"
             className="w-32 md:w-36 fill-white group-hover:fill-gray-300"
           >
             {/* SVG content here */}
-          </svg>
+          {/*</svg> */}
         </a>
-        <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight flex flex-col gap-3 items-center lg:items-start">
-          <span className="relative">Build your projects</span>
+        <h1 className="font-extrabold text-3xl lg:text-6xl tracking-tight flex flex-col gap-3 items-center lg:items-start">
+          <span className="relative">The only club at Lynbrook focused on </span>
           <span className="whitespace-nowrap relative">
-            <span className="mr-3 sm:mr-4 md:mr-5">Faster,</span>
             <span className="relative whitespace-nowrap">
-              <span className="absolute bg-gray-700 -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"></span>
-              <span className="relative text-cyan-300">together</span>
+              <span className="relative bg-gray-700 px-2 text-cyan-300">Passion Project Development!</span>
             </span>
           </span>
         </h1>
         <p className="text-lg text-gray-300 opacity-80 leading-relaxed">
         DevX club is the best club at Lynbrook to start cool coding projects!
+        </p>
+        <p className="text-2xl text-gray-300 opacity-80 leading-relaxed">
+        We meet <span className='font-bold'>Tuesday Lunches in Room 608 (CS Room)</span>
         </p>
         <div className="space-y-4">
           <Button className="text-lg	 px-20 py-7 text-center btn-wide group bg-cyan-400 hover:bg-cyan-300 text-gray-900">
@@ -113,7 +120,7 @@ export default function Home() {
       </div>
 
       {/* Right Image Block */}
-      <div className="relative max-md:-m-4 lg:w-full">
+      {/* <div className="relative max-md:-m-4 lg:w-full">
         <Image
           alt="Feature Image"
           src="/placeholderthing.png"
@@ -121,16 +128,17 @@ export default function Home() {
           height={1080}
           className="w-full max-w-xl ml-auto"
         />
-      </div>
+      </div> */}
     </section>
 
 
     {/* heres a section???  */}
-        <section className="max-w-7xl mx-auto px-6 md:px-8 py-16  bg-gradient-to-t from-blue-600 to-blue-900 rounded-lg	">
+        <section className="max-w-7xl mx-auto px-6 md:px-8 py-16  bg-gradient-to-t from-blue-600 to-blue-900 rounded-lg	flex flex-row">
           <div className="max-w-2xl xl:max-w-5xl">
-            <h1 className="relative font-semibold text-4xl xl:text-6xl/tight tracking-tight mt-5">
-            What is DevX??? 
+            <h1 className="relative font-semibold text-4xl xl:text-6xl/tight tracking-tight mt-5 uppercase">
+            Learning by Doing
             </h1>
+          <div>
             <p className="text-white max-w-[44rem] text-muted-foreground text-sm md:text-xl whitespace-pre-line mt-4 md:mt-6">
               DevX club is the best club at Lynbrook to start cool coding projects!
             </p>
@@ -147,31 +155,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
 
           
-          {/* <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <Image
+          <div className="mx-8">
+          <Image
                 src="/prog1.png"
                 alt="Example Image"
-                width={500}
-                height={300}
+                width={300}
+                height={150}
                 className="rounded-lg"
               />
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold mb-4">What is DevX Club?</h2>
-              <p className="text-lg text-gray-700 mb-4">
-                DevX club is a project-based coding club....... blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank 
-              </p>
-              <Button className="mt-4" href="/learn-more">
-                Learn More
-              </Button>
-            </div>
-          </div> */}
+          </div>
         </section>
 
-        <section className="max-w-7xl mx-auto px-6 md:px-8 py-16">
+        <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16">
 
         <h2 className="text-5xl font-bold text-center mb-12">Meet Our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -179,6 +177,74 @@ export default function Home() {
               <TeamMemberCard key={index} member={member} />
             ))}
           </div>
+        </section>
+        {/* heres a section???  */}
+        <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
+            <h1 className="text-5xl font-bold text-center mb-12">
+            GET INVOLVED
+            </h1>
+          <div className="">
+            <p className="text-white max-w-[44rem] font-semibold text-muted-foreground text-sm md:text-xl whitespace-pre-line mt-4 md:mt-6">
+              Contact us here:
+            </p>
+            <div className="flex justify-around flex-col md:flex-row mt-12 gap-y-10">
+              <div>
+                <img src="" />
+                <h1>YouTube</h1>
+              </div>
+              <div>
+                <img src="" />
+                <h1>GitHub</h1>
+              </div>
+              <div>
+                <img src="" />
+                <h1>Discord</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* heres a section???  */}
+        <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
+
+            <h1 className="text-5xl font-bold text-center mb-12">
+           TECHNOLOGIES WE USE
+            </h1>
+            <div className="">
+            <p className="text-white max-w-[44rem] text-muted-foreground text-sm font-semibold md:text-xl whitespace-pre-line mt-4 md:mt-6">
+              Technologies:
+            </p>
+            <div className="flex justify-around flex-col md:flex-row mt-12 gap-y-10">
+              <div>
+                <img src="" />
+                <h1>Javascript</h1>
+              </div>
+              <div>
+                <img src="" />
+                <h1>Typescript</h1>
+              </div>
+              <div>
+                <img src="" />
+                <h1>HTML5</h1>
+              </div>
+              <div>
+                <img src="" />
+                <h1>CSS3</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="mt-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
+
+            <h1 className="text-5xl font-bold text-center mb-12">
+           Contact Us:
+            </h1>
+            <div className="">
+              <form className="flex flex-col space-y-4">
+                <input className="rounded-lg py-3 px-5" type="text" placeholder="Email..."/>
+                <input className="rounded-lg py-8 px-5" type="textarea" placeholder="Question..." />
+                <button className="px-5 py-2 rounded-lg text-xl bg-gray-700">Submit</button>
+              </form>
+            </div>
         </section>
       </main>
 
