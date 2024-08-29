@@ -7,7 +7,7 @@ import { Rocket } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <header className="bg-gray-900 text-white w-full py-3 lg:py-4">
+    <header className="bg-black text-white w-full py-3 lg:py-4">
   <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8 py-4.5">
     <a className="block relative w-[125px] h-[44px] " href="/">
       <Image src="/devxlogoblue.png" alt="my logo" layout="fill"

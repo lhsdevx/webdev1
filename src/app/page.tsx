@@ -15,41 +15,52 @@ import Image from "next/image";
 const teamMembers = [
   {
     name: 'Jane Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'a person',
   },
   {
     name: 'Doe Jane',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
   },
   // Add more members as needed
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
   },
 ];
+
+const programming = [
+  { src: "/html.png", alt: "Logo 1" },
+  { src: "/javascript-logo.png", alt: "Logo 2" },
+  { src: "/svelte.png", alt: "Logo 3" },
+  { src: "/typescript.png", alt: "Logo 4" },
+  { src: "/css.png", alt: "Logo 4" },
+  { src: "/flask.png", alt: "Logo 4" },
+  { src: "/react.png", alt: "Logo 4" },
+  // Add more logos as needed
+]
 
 export default function Home() {
   return (
@@ -58,8 +69,8 @@ export default function Home() {
       <Navbar/>
 
       {/* Main Content */}
-      <main className="bg-gray-900 text-white ">
-      <section className="bg-gray-900 text-white max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-20">
+      <main className="bg-black text-white ">
+      <section className="bg-black text-white max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-20">
       {/* Left Content Block */}
       <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
         <a
@@ -82,8 +93,11 @@ export default function Home() {
           <span className="whitespace-nowrap relative">
             <span className="mr-3 sm:mr-4 md:mr-5">Faster,</span>
             <span className="relative whitespace-nowrap">
-              <span className="absolute bg-gray-700 -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"></span>
-              <span className="relative text-cyan-300">together</span>
+              <span className="absolute bg-black -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"></span>
+              {/* <span className="relative text-cyan-300">together</span> */}
+              <span className="relative bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
+              together
+            </span>
             </span>
           </span>
         </h1>
@@ -134,18 +148,19 @@ export default function Home() {
             <p className="text-white max-w-[44rem] text-muted-foreground text-sm md:text-xl whitespace-pre-line mt-4 md:mt-6">
               DevX club is the best club at Lynbrook to start cool coding projects!
             </p>
-            <div className="flex justify-between flex-col md:flex-row mt-12 gap-y-10">
-              <div className="flex items-center text-center  space-x-3">
-              <Button className="space-x-2 text-lg	 px-20 py-7 text-center btn-wide group bg-cyan-100 hover:bg-cyan-50 text-gray-900">
-          <IterationCcw/> 
-            Get Started
-          </Button>
-          <Button className="space-x-2 text-lg px-20 py-7 text-center btn-wide group bg-cyan-100 hover:bg-cyan-50 text-gray-900">
-          <Apple/> 
-            Learn More
-          </Button>
-              </div>
-            </div>
+            <div className="flex flex-col md:flex-row justify-center md:justify-between mt-12 gap-y-6 gap-x-4">
+  <div className="flex flex-col sm:flex-row items-center text-center space-y-4 sm:space-y-0 sm:space-x-3">
+    <Button className="w-full sm:w-auto text-lg px-10 py-5 text-center btn-wide group bg-cyan-100 hover:bg-cyan-50 text-gray-900">
+      <IterationCcw />
+      Get Started
+    </Button>
+    <Button className="w-full sm:w-auto text-lg px-10 py-5 text-center btn-wide group bg-cyan-100 hover:bg-cyan-50 text-gray-900">
+      <Apple />
+      Learn More
+    </Button>
+  </div>
+</div>
+
           </div>
 
           
@@ -173,13 +188,36 @@ export default function Home() {
 
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-16">
 
-        <h2 className="text-5xl font-bold text-center mb-12">Meet Our Team</h2>
+        <h2 className="text-7xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">our team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
               <TeamMemberCard key={index} member={member} />
             ))}
           </div>
         </section>
+
+
+        <section className="py-5 text-white">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <h2 className="text-7xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">technology</h2>
+        <div className="flex flex-wrap justify-center items-center gap-8">
+          {/* Replace with your technology logos */}
+
+          {programming.map((logo, index) => (
+              <li key={index} className="flex justify-center items-center">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
+              </li>
+            ))}
+        </div>
+      </div>
+    </section>
+
       </main>
 
       {/* Footer */}
