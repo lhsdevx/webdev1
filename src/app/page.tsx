@@ -15,48 +15,59 @@ import Image from "next/image";
 const teamMembers = [
   {
     name: 'Jane Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'a person',
     position: 'hello world'
   },
   {
     name: 'Doe Jane',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
     position: 'hello world'
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
     position: 'hello world'
   },
   // Add more members as needed
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
     position: 'hello world'
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
     position: 'hello world'
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
     position: 'hello world'
   },
   {
     name: 'Doe Doe',
-    photo: 'person.png',
+    photo: 'meme.jpg',
     description: 'another person',
     position: 'hello world'
   },
 ];
+
+const programming = [
+  { src: "/html.png", alt: "Logo 1" },
+  { src: "/javascript-logo.png", alt: "Logo 2" },
+  { src: "/svelte.png", alt: "Logo 3" },
+  { src: "/typescript.png", alt: "Logo 4" },
+  { src: "/css.png", alt: "Logo 4" },
+  { src: "/flask.png", alt: "Logo 4" },
+  { src: "/react.png", alt: "Logo 4" },
+  // Add more logos as needed
+]
 
 export default function Home() {
   return (
@@ -65,8 +76,8 @@ export default function Home() {
       <Navbar/>
 
       {/* Main Content */}
-      <main className="bg-gray-900 text-white ">
-      <section className="bg-gray-900 text-white max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-20">
+      <main className="bg-black text-white ">
+      <section className="bg-black text-white max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-20">
       {/* Left Content Block */}
       <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
         <a
@@ -155,7 +166,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          </div>
 
           
           <div className="mx-8">
@@ -171,7 +181,7 @@ export default function Home() {
 
         <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16">
 
-        <h2 className="text-5xl font-bold text-center mb-12">Meet Our Team</h2>
+        <h2 className="text-7xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">our team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
               <TeamMemberCard key={index} member={member} />

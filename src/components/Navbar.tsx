@@ -7,7 +7,7 @@ import { Rocket } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <header className="bg-gray-900 text-white w-full py-3 lg:py-4">
+    <header className="bg-black text-white w-full py-3 lg:py-4">
   <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8 py-4.5">
   <div className="flex items-center space-x-3">
         <Button className=" space-x-2 ring-1 ring-primary rounded-xl duration-300 shadow-sm py-6 px-7 btn-wide group border border-indigo-500 text-indigo-500 text-lg">
