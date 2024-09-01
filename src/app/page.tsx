@@ -9,50 +9,50 @@ import { IterationCcw } from "lucide-react";
 import { Apple } from "lucide-react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const teamMembers = [
   {
-    name: "Jane Doe",
-    photo: "meme.jpg",
-    description: "a person",
-    position: "hello world",
+    name: "Snehil Kakani",
+    photo: "/snehil.jpeg",
+    description: "coder, producer, actor",
+    position: "president",
   },
   {
-    name: "Doe Jane",
-    photo: "meme.jpg",
-    description: "another person",
-    position: "hello world",
+    name: "Abhiram Bhavaraju",
+    photo: "/abhiram.jpg",
+    description: "magician",
+    position: "vice president",
   },
   {
-    name: "Doe Doe",
-    photo: "meme.jpg",
-    description: "another person",
-    position: "hello world",
-  },
-  // Add more members as needed
-  {
-    name: "Doe Doe",
-    photo: "meme.jpg",
-    description: "another person",
-    position: "hello world",
+    name: "Tanay Ubale",
+    photo: "/tanay.jpg",
+    description: "water polo",
+    position: "vice president",
   },
   {
-    name: "Doe Doe",
-    photo: "meme.jpg",
-    description: "another person",
-    position: "hello world",
+    name: "Rohan Fernandes",
+    photo: "/rohan.jpeg",
+    description: "bball 4 life",
+    position: "head of frontend",
   },
   {
-    name: "Doe Doe",
-    photo: "meme.jpg",
-    description: "another person",
-    position: "hello world",
+    name: "Anping Huang",
+    photo: "/anping.jpg",
+    description: "video maker",
+    position: "head of frontend",
   },
   {
-    name: "Doe Doe",
-    photo: "meme.jpg",
-    description: "another person",
-    position: "hello world",
+    name: "Woojin Yoon",
+    photo: "/woojin.jpg",
+    description: "instant ramen",
+    position: "head of backend",
+  },
+  {
+    name: "Aarush Tiwari",
+    photo: "/aarush.png",
+    description: "it's a me, baba t",
+    position: "public relations",
   },
 ];
 
@@ -74,69 +74,50 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="bg-black text-white ">
-        <section className="bg-black text-white max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-20">
+      <main className="bg-black text-white">
+        <section className="bg-black text-white max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-5 lg:items-start px-8 py-8 lg:py-20">
           {/* Left Content Block */}
-          <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
-            <a
-              href="#"
-              target="_blank"
-              className="-mb-4 md:-mb-6 group"
-              title="Explore our product"
-            >
-              {/* <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 122 37"
-            className="w-32 md:w-36 fill-white group-hover:fill-gray-300"
-          >
-            {/* SVG content here */}
-              {/*</svg> */}
-            </a>
-            <h1 className="font-extrabold text-3xl lg:text-6xl tracking-tight flex flex-col gap-3 items-center lg:items-start">
-              <span className="relative">
-                The only club at Lynbrook focused on{" "}
+          <div className="flex flex-col gap-5 lg:gap-8 items-center justify-center text-center lg:text-left lg:items-start">
+            <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight flex flex-col gap-2 items-center lg:items-start">
+              <span className="relative whitespace-nowrap">
+                Build your passion projects
               </span>
               <span className="whitespace-nowrap relative">
+                <span className="mr-0 sm:mr-1 md:mr-2">faster,</span>
                 <span className="relative whitespace-nowrap">
-                  <span className="relative bg-gray-700 px-2 text-cyan-300">
-                    Passion Project Development!
+                  <span className="absolute bg-black -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"></span>
+                  {/* <span className="relative text-cyan-300">together</span> */}
+                  <span className="relative bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
+                    together.
                   </span>
                 </span>
               </span>
             </h1>
-            <p className="text-lg text-gray-300 opacity-80 leading-relaxed">
-              DevX club is the best club at Lynbrook to start cool coding
-              projects!
-            </p>
-            <p className="text-2xl text-gray-300 opacity-80 leading-relaxed">
-              We meet{" "}
-              <span className="font-bold">
-                Tuesday Lunches in Room 608 (CS Room)
-              </span>
-            </p>
-            <div className="space-y-4">
-              <Button className="text-lg	 px-20 py-7 text-center btn-wide group bg-cyan-400 hover:bg-cyan-300 text-gray-900">
-                <IterationCcw />
-                Get Started
-              </Button>
-
-              <p className="text-sm md:text-base flex justify-center items-center gap-2 md:text-sm text-gray-300">
-                <svg
-                  className="w-5 h-5 fill-yellow-400 animate-pulse"
-                  viewBox="0 0 161 154"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* SVG content */}
-                </svg>
+            <div className="flex-col flex gap-2">
+              <p className="text-lg text-gray-300 opacity-80 leading-relaxed">
+                The only club at Lynbrook focused on project portfolio and
+                resume building.
+                <br />
+                <span className="text-cyan-300">No experience required.</span>
               </p>
-              <div className="text-base text-gray-300">
-                <span className="font-semibold text-white"></span>{" "}
-                Beginner-Experienced are all welcome
-              </div>
+              <p className="text-2xl text-gray-300 opacity-80 leading-relaxed">
+                <span className="font-bold">Tuesday Lunches, Room 608</span>
+              </p>
+            </div>
+            <div className="space-y-4">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpuMjTimum3c3g8Cx0Va6CW-676ywDxlgS41aK4qTSO6ZUXQ/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="text-lg px-20 py-7 text-center btn-wide group bg-cyan-400 hover:bg-cyan-300 flex gap-2 items-center justify-center text-gray-900">
+                  <IterationCcw />
+                  Get Started
+                </Button>
+              </a>
             </div>
           </div>
 
-          {/* Right Image Block */}
           <div className="relative max-md:-m-4 lg:w-full">
             <Image
               alt="Feature Image"
@@ -149,45 +130,39 @@ export default function Home() {
         </section>
 
         {/* heres a section???  */}
-        <section className="max-w-7xl mx-auto px-6 md:px-8 py-16  bg-gradient-to-t from-blue-600 to-blue-900 rounded-lg	flex flex-row">
-          <div className="max-w-2xl xl:max-w-5xl">
-            <h1 className="relative font-semibold text-4xl xl:text-6xl/tight tracking-tight mt-5 uppercase">
-              Learning by Doing
-            </h1>
-            <div>
-              <p className="text-white max-w-[44rem] text-muted-foreground text-sm md:text-xl whitespace-pre-line mt-4 md:mt-6">
-                DevX club is the best club at Lynbrook to start cool coding
-                projects!
-              </p>
-              <div className="flex justify-between flex-col md:flex-row mt-12 gap-y-10">
-                <div className="flex items-center text-center  space-x-3">
-                  <Button className="space-x-2 text-lg	 px-20 py-7 text-center btn-wide group bg-cyan-100 hover:bg-cyan-50 text-gray-900">
-                    <IterationCcw />
-                    Get Started
-                  </Button>
-                  <Button className="space-x-2 text-lg px-20 py-7 text-center btn-wide group bg-cyan-100 hover:bg-cyan-50 text-gray-900">
-                    <Apple />
-                    Learn More
-                  </Button>
-                </div>
-              </div>
-            </div>
-
-            <div className="mx-8">
+        <section
+          id="philosophy"
+          className="scroll-m-10 max-w-7xl mx-auto px-6 md:px-8 py-16 bg-gradient-to-t from-blue-600 to-blue-900 rounded-none"
+        >
+          <h2 className="text-white text-center text-xl mb-1 uppercase">
+            Core Philosophy
+          </h2>
+          <h1 className="text-6xl font-bold text-center pb-5 mb-5 bg-gradient-to-r from-indigo-100 to-cyan-300 bg-clip-text text-transparent">
+            Learning By Doing
+          </h1>
+          <div className="grid grid-cols-8 gap-5">
+            <p className="col-span-5 text-white text-muted-foreground text-sm md:text-lg whitespace-pre-line py-16">
+              {
+                "From learning important concepts to building powerful projects, everything we do is hands-on. We teach the basics of web development, mobile development, and more, and let members develop their skills by completing real-world projects. The unique approach we bring to teaching computer science and software development has empowered our members to build amazing and meaningful projects that contribute to the community."
+              }
+            </p>
+            <div className="col-span-3 relative">
               <Image
-                src="/prog1.png"
-                alt="Example Image"
-                width={300}
-                height={150}
-                className="rounded-lg"
+                src="/teaching.jpg"
+                alt="Teaching Image"
+                fill
+                className="rounded-lg object-cover"
               />
             </div>
           </div>
         </section>
 
-        <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16">
-          <h2 className="text-7xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
-            our team
+        <section
+          id="team"
+          className="scroll-m-10 my-5 max-w-7xl mx-auto px-6 md:px-8 py-16"
+        >
+          <h2 className="text-6xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
+            Our Team
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
@@ -196,25 +171,37 @@ export default function Home() {
           </div>
         </section>
         {/* heres a section???  */}
-        <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
-          <h1 className="text-5xl font-bold text-center mb-12">GET INVOLVED</h1>
-          <div className="">
-            <p className="text-white max-w-[44rem] font-semibold text-muted-foreground text-sm md:text-xl whitespace-pre-line mt-4 md:mt-6">
-              Contact us here:
-            </p>
-            <div className="flex justify-around flex-col md:flex-row mt-12 gap-y-10">
-              <div>
-                <img src="" />
-                <h1>YouTube</h1>
-              </div>
-              <div>
-                <img src="" />
-                <h1>GitHub</h1>
-              </div>
-              <div>
-                <img src="" />
-                <h1>Discord</h1>
-              </div>
+        <section
+          id="projects"
+          className="scroll-m-28 my-14 max-w-7xl mx-auto px-6 md:px-8 py-16w"
+        >
+          <h2 className="text-6xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
+            What We{"'"}ve Built
+          </h2>
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
+            <div className="flex flex-col items-center gap-5">
+              <h1 className="text-cyan-100 font-semibold text-center text-4xl">
+                Coding Contest
+              </h1>
+              <Image
+                src="/proco.jpg"
+                width={300}
+                height={150}
+                className="w-full h-full rounded-xl"
+                alt="Proco Contest"
+              ></Image>
+            </div>
+            <div className="flex flex-col items-center gap-5">
+              <h1 className="text-cyan-100 font-semibold text-center text-4xl">
+                Club Websites
+              </h1>
+              <Image
+                src="/clubwebsites.png"
+                width={300}
+                height={150}
+                className="w-full h-full rounded-xl"
+                alt="Proco Contest"
+              ></Image>
             </div>
           </div>
         </section>
