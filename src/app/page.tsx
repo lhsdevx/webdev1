@@ -10,6 +10,7 @@ import { Apple } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 const teamMembers = [
   {
@@ -213,11 +214,19 @@ export default function Home() {
           <div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="flex flex-col items-center">
-                <img src="javascript-logo.png" alt="Javascript Logo" className="w-20 h-20" />
+                <img
+                  src="javascript-logo.png"
+                  alt="Javascript Logo"
+                  className="w-20 h-20"
+                />
                 <h1 className="mt-4 text-center">Javascript</h1>
               </div>
               <div className="flex flex-col items-center">
-                <img src="typescript.png" alt="Typescript Logo" className="w-20 h-20" />
+                <img
+                  src="typescript.png"
+                  alt="Typescript Logo"
+                  className="w-20 h-20"
+                />
                 <h1 className="mt-4 text-center">Typescript</h1>
               </div>
               <div className="flex flex-col items-center">
@@ -233,23 +242,11 @@ export default function Home() {
         </section>
 
         <section className="mt-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
-          <h1 className="text-5xl font-bold text-center mb-12">Contact Us:</h1>
+          <h2 className="text-6xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
+            Contact Us!
+          </h2>
           <div className="">
-            <form className="flex flex-col space-y-4">
-              <input
-                className="rounded-lg py-3 px-5"
-                type="text"
-                placeholder="Email..."
-              />
-              <input
-                className="rounded-lg py-8 px-5"
-                type="textarea"
-                placeholder="Question..."
-              />
-              <button className="px-5 py-2 rounded-lg text-xl bg-gray-700">
-                Submit
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>
