@@ -39,7 +39,7 @@ const teamMembers = [
   {
     name: "Anping Huang",
     photo: "/anping.jpg",
-    description: "video maker",
+    description: "code + design",
     position: "head of frontend",
   },
   {
@@ -206,34 +206,32 @@ export default function Home() {
           </div>
         </section>
         {/* heres a section???  */}
-        <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
+        <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16">
           <h1 className="text-5xl font-bold text-center mb-12">
             TECHNOLOGIES WE USE
           </h1>
-          <div className="">
-            <p className="text-white max-w-[44rem] text-muted-foreground text-sm font-semibold md:text-xl whitespace-pre-line mt-4 md:mt-6">
-              Technologies:
-            </p>
-            <div className="flex justify-around flex-col md:flex-row mt-12 gap-y-10">
-              <div>
-                <img src="" />
-                <h1>Javascript</h1>
+          <div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+              <div className="flex flex-col items-center">
+                <img src="javascript-logo.png" alt="Javascript Logo" className="w-20 h-20" />
+                <h1 className="mt-4 text-center">Javascript</h1>
               </div>
-              <div>
-                <img src="" />
-                <h1>Typescript</h1>
+              <div className="flex flex-col items-center">
+                <img src="typescript.png" alt="Typescript Logo" className="w-20 h-20" />
+                <h1 className="mt-4 text-center">Typescript</h1>
               </div>
-              <div>
-                <img src="" />
-                <h1>HTML5</h1>
+              <div className="flex flex-col items-center">
+                <img src="html.png" alt="HTML5 Logo" className="w-20 h-20" />
+                <h1 className="mt-4 text-center">HTML5</h1>
               </div>
-              <div>
-                <img src="" />
-                <h1>CSS3</h1>
+              <div className="flex flex-col items-center">
+                <img src="css.png" alt="CSS3 Logo" className="w-20 h-20" />
+                <h1 className="mt-4 text-center">CSS3</h1>
               </div>
             </div>
           </div>
         </section>
+
         <section className="mt-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
           <h1 className="text-5xl font-bold text-center mb-12">Contact Us:</h1>
           <div className="">
