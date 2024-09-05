@@ -10,6 +10,7 @@ import { Apple } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 const teamMembers = [
   {
@@ -268,23 +269,11 @@ export default function Home() {
         </section>
 
         <section className="mt-14 max-w-7xl mx-auto px-6 md:px-8 py-16w">
-          <h1 className="text-5xl font-bold text-center mb-12">Contact Us:</h1>
+          <h2 className="text-6xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
+            Contact Us!
+          </h2>
           <div className="">
-            <form className="flex flex-col space-y-4">
-              <input
-                className="rounded-lg py-3 px-5"
-                type="text"
-                placeholder="Email..."
-              />
-              <input
-                className="rounded-lg py-8 px-5"
-                type="textarea"
-                placeholder="Question..."
-              />
-              <button className="px-5 py-2 rounded-lg text-xl bg-gray-700">
-                Submit
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>

@@ -12,7 +12,7 @@ import { Github } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import Image from "next/image";
 
-const TeamMemberCard = ({ member }) => {
+const TeamMemberCard = ({ member }: { member: any }) => {
   return (
     <Card className="max-w-sm bg-transparent text-white border border-transparent shadow-lg rounded-lg p-5">
       <div className="flex flex-col items-center">
