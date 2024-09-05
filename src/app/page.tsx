@@ -74,33 +74,34 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="bg-black text-white">
-        <section className="bg-black text-white max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-5 lg:items-start px-8 py-8 lg:py-20">
+      <main className="bg-[#111113] text-white">
+        <section className="  max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-5 lg:items-start px-8 py-8 lg:py-20">
           {/* Left Content Block */}
           <div className="flex flex-col gap-5 lg:gap-8 items-center justify-center text-center lg:text-left lg:items-start">
             <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight flex flex-col gap-2 items-center lg:items-start">
-              <span className="relative whitespace-nowrap">
+              <span className="relative md:whitespace-nowrap">
                 Build your passion projects
               </span>
               <span className="whitespace-nowrap relative">
                 <span className="mr-0 sm:mr-1 md:mr-2">faster,</span>
-                <span className="relative whitespace-nowrap">
-                  <span className="absolute bg-black -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"></span>
+                <span className="relative md:whitespace-nowrap">
+                  <span className="absolute bg-none -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"></span>
                   {/* <span className="relative text-cyan-300">together</span> */}
-                  <span className="relative bg-gradient-to-r from-cyan-300 to-sky-600 bg-clip-text text-transparent">
+                  <span className="relative bg-gradient-to-t from-blue-500 to-cyan-500 bg-clip-text text-transparent">
                     together.
                   </span>
+                  {/* <span className='relative bg-gradient-to-r from-black to-gray-900 bg-clip-text text-transparent'>together</span> */}
                 </span>
               </span>
             </h1>
             <div className="flex-col flex gap-2">
-              <p className="text-lg text-gray-300 opacity-80 leading-relaxed">
+              <p className="text-lg opacity-100 leading-relaxed">
                 The only club at Lynbrook focused on project portfolio and
                 resume building.
                 <br />
-                <span className="text-cyan-300">No experience required.</span>
+                <span className="">No experience required.</span>
               </p>
-              <p className="text-2xl text-gray-300 opacity-80 leading-relaxed">
+              <p className="text-2xl text-blue-300 opacity-80 leading-relaxed">
                 <span className="font-bold">Tuesday Lunches, Room 608</span>
               </p>
             </div>
@@ -110,7 +111,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="text-lg px-20 py-7 text-center btn-wide group bg-cyan-400 hover:bg-cyan-300 flex gap-2 items-center justify-center text-gray-900">
+                <Button className="text-lg px-20 py-7 text-center btn-wide group bg-blue-700 hover:bg-blue-600 border-2 border-transparent hover:border-white flex gap-2 items-center justify-center text-white">
                   <IterationCcw />
                   Get Started
                 </Button>
@@ -130,32 +131,33 @@ export default function Home() {
         </section>
 
         {/* heres a section???  */}
-        <section
-          id="philosophy"
-          className="scroll-m-10 max-w-7xl mx-auto px-6 md:px-8 py-16 bg-gradient-to-t from-blue-600 to-blue-900 rounded-none"
-        >
-          <h2 className="text-white text-center text-xl mb-1 uppercase">
-            Core Philosophy
-          </h2>
-          <h1 className="text-6xl font-bold text-center pb-5 mb-5 bg-gradient-to-r from-indigo-100 to-cyan-300 bg-clip-text text-transparent">
-            Learning By Doing
-          </h1>
-          <div className="grid grid-cols-8 gap-5">
-            <p className="col-span-5 text-white text-muted-foreground text-sm md:text-lg whitespace-pre-line py-16">
-              {
-                "From learning important concepts to building powerful projects, everything we do is hands-on. We teach the basics of web development, mobile development, and more, and let members develop their skills by completing real-world projects. The unique approach we bring to teaching computer science and software development has empowered our members to build amazing and meaningful projects that contribute to the community."
-              }
-            </p>
-            <div className="col-span-3 relative">
-              <Image
-                src="/teaching.jpg"
-                alt="Teaching Image"
-                fill
-                className="rounded-lg object-cover"
-              />
-            </div>
-          </div>
-        </section>
+        <section id="philosophy" className="flex flex-col md:flex-row items-center rounded-[60px]  overflow-hidden justify-center min-h-screen p-8">
+
+  <div className="md:w-1/3 p-8 md:p-0 lg:p-0 flex justify-center items-center">
+    <Image
+      src="/teaching.jpg"
+      alt="Inbox Preview"
+      width={735}
+      height={735}
+      className=" w-full h-auto max-w-sm max-h-sm rounded-lg"
+    />
+  </div>
+
+  <div className="md:w-1/2 p-8 text-center md:text-left">
+  <p className="text-2xl text-[#edeef0] pb-5 ">CORE PHILOSOPHY</p>
+    <h2 className="text-5xl font-bold mb-4 text-white">
+      Learning By Doing
+    </h2>
+    <p className="text-lg text-[#edeef0]  mb-6">
+    From learning important concepts to building powerful projects, everything we do is hands-on. We teach the basics of web development, mobile development, and more, and let members develop their skills by completing real-world projects. The unique approach we bring to teaching computer science and software development has empowered our members to build amazing and meaningful projects that contribute to the community.
+    </p>
+    <Button className="text-lg px-20 py-7 text-center btn-wide group bg-blue-700 hover:bg-blue-600 border-2 border-transparent hover:border-white flex gap-2 items-center justify-center text-white">
+                  <IterationCcw />
+                  Join Us!
+                </Button>
+  </div>
+
+</section>
 
         <section
           id="team"
@@ -180,26 +182,26 @@ export default function Home() {
           </h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
             <div className="flex flex-col items-center gap-5">
-              <h1 className="text-cyan-100 font-semibold text-center text-4xl">
+              <h1 className="text-white font-semibold text-center text-4xl">
                 Coding Contest
               </h1>
               <Image
                 src="/proco.jpg"
                 width={300}
                 height={150}
-                className="w-full h-full rounded-xl"
+                className="w-full h-full rounded-xl border-8 border-blue-400 "
                 alt="Proco Contest"
               ></Image>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <h1 className="text-cyan-100 font-semibold text-center text-4xl">
+              <h1 className="text-white font-semibold text-center text-4xl">
                 Club Websites
               </h1>
               <Image
                 src="/clubwebsites.png"
                 width={300}
                 height={150}
-                className="w-full h-full rounded-xl"
+                className="w-full h-full border-8 border-blue-400 rounded-xl"
                 alt="Proco Contest"
               ></Image>
             </div>
@@ -207,26 +209,59 @@ export default function Home() {
         </section>
         {/* heres a section???  */}
         <section className="my-14 max-w-7xl mx-auto px-6 md:px-8 py-16">
-          <h1 className="text-5xl font-bold text-center mb-12">
+          <h1 className="text-4xl font-bold text-center mb-12">
             TECHNOLOGIES WE USE
           </h1>
           <div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="flex flex-col items-center">
-                <img src="javascript-logo.png" alt="Javascript Logo" className="w-20 h-20" />
+                <img src="javascript-logo.png" alt="Javascript Logo" className="w-20 h-20 object-contain" />
                 <h1 className="mt-4 text-center">Javascript</h1>
               </div>
               <div className="flex flex-col items-center">
-                <img src="typescript.png" alt="Typescript Logo" className="w-20 h-20" />
+                <img src="typescript.png" alt="Typescript Logo" className="w-20 h-20 object-contain" />
                 <h1 className="mt-4 text-center">Typescript</h1>
               </div>
               <div className="flex flex-col items-center">
-                <img src="html.png" alt="HTML5 Logo" className="w-20 h-20" />
+                <img src="html.png" alt="HTML5 Logo" className="w-20 h-20 object-contain" />
                 <h1 className="mt-4 text-center">HTML5</h1>
               </div>
               <div className="flex flex-col items-center">
-                <img src="css.png" alt="CSS3 Logo" className="w-20 h-20" />
+                <img src="css.png" alt="CSS3 Logo" className="w-20 h-20 object-contain" />
                 <h1 className="mt-4 text-center">CSS3</h1>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <img src="firebase.png" alt="firebase Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">firebase</h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="figma.png" alt="figma Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">figma</h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="react.png" alt="react Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">react</h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="nextjs.jpg" alt="nextjs Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">nextjs</h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="supabase.jpg" alt="supabase Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">supabase</h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="prisma.png" alt="prisma Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">prisma</h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="svelte.png" alt="svelte Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">svelte</h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="nodejs.webp" alt="nodejs Logo" className="w-20 h-20 object-contain" />
+                <h1 className="mt-4 text-center">nodejs</h1>
               </div>
             </div>
           </div>

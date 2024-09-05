@@ -14,7 +14,7 @@ import Image from "next/image";
 
 const TeamMemberCard = ({ member }) => {
   return (
-    <Card className="max-w-sm bg-gray-800 text-white border border-transparent shadow-lg rounded-lg p-5">
+    <Card className="max-w-sm bg-transparent text-white border border-transparent shadow-lg rounded-lg p-5">
       <div className="flex flex-col items-center">
         <div className="rounded-full p-[5px] bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-500">
           <Image
