@@ -45,7 +45,7 @@ const teamMembers = [
   },
   {
     name: "Woojin Yoon",
-    photo: "/woojin.jpg",
+    photo: "/woojin.png",
     description: "instant ramen",
     position: "head of backend",
   },
