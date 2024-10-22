@@ -103,7 +103,7 @@ export default function Home() {
                 <span className="">No experience required.</span>
               </p>
               <p className="text-2xl text-blue-300 opacity-80 leading-relaxed">
-                <span className="font-bold">Tuesday Lunches, Room 608</span>
+                <span className="font-bold">Tuesday Brunches, Room 608</span>
               </p>
             </div>
             <div className="space-y-4">
